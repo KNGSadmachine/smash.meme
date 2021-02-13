@@ -5,11 +5,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            Image("DSC02510")
+            Image("DSC03633")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 5000, height: 2500)
-                .offset(x: 45, y: 250)
+                    .frame(width: 5000, height: 1500)
+                .offset(x: -120, y: 250)
                 .overlay(
                 Setting()
                 )
@@ -82,7 +82,7 @@ struct Share : View{
 
 struct Sheekbar : View{
     var body: some View {
-        Image("sheekbar")
+        Image("sheekbar-1")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 400, height: 100)
@@ -112,11 +112,11 @@ struct Uparrow : View{
 
 struct KNJ : View{
     var body: some View {
-        Image("KNJ")
+        Image("KNJICON")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 60, height: 60)
-            .offset(x: -150, y: -340)
+            .offset(x: -165, y: -340)
     }
 }
 
@@ -126,7 +126,7 @@ struct Downarrow : View{
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 20, height: 20)
-            .offset(x: -170, y: 370)
+            .offset(x: -170, y: 385)
             .rotationEffect(.degrees(180), anchor: .center)
     }
 }
@@ -134,19 +134,17 @@ struct Downarrow : View{
 struct Username : View{
     var body: some View {
         VStack{
-            Text("KNJ「Freestyle Football」")
+            Text("【KNJ】☆ゲッダン☆【踊ってみた】")
                 .multilineTextAlignment(.leading)
-                .offset(x: 30, y: -345)
+                .offset(x: 35, y: -345)
                 .foregroundColor(.white)
-                .font(Font.system(size: 23).bold())
-            Text("Crazy powered by Iwate Uni")
+                .font(Font.system(size: 20).bold())
+            Text("Crazy powered by Iwate")
                 .multilineTextAlignment(.leading)
-                .offset(x: 4, y: -340)
+                .offset(x: -30, y: -340)
                 .foregroundColor(.white)
                 .font(Font.system(size: 18))
         }
-        
-        
     }
 }
 
