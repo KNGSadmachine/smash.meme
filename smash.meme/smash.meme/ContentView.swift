@@ -5,27 +5,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("DSC02475")
+            Image("DSC02510")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 5000, height: 1500)
+                    .frame(width: 2500, height: 1500)
                 .offset(x: -25, y: 250)
-            Image("image")
-                .resizable()
-                .frame(width: 5, height: 15)
-        }
-        VStack{
-            Sheekbar()
-            Images()
-            Share()
-            Setting()
-            Stopgo()
-            Uparrow()
-            
-            
-                
-        }
+                .overlay(
+                Setting()
+                )
+                .overlay(
+                Share()
+                )
+                .overlay(
+                Images()
+                )
+                .overlay(
+                Images()
+                )
+                .overlay(
+                Sheekbar()
+                )
+                .overlay(
+                Stopgo()
+                )
+                .overlay(
+                Uparrow()
+                )
         }
     }
 
@@ -36,7 +41,8 @@ struct Setting : View{
         Image("setting")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 100, height: 100)
+            .frame(width: 60, height: 60)
+            .offset(x: 140, y:350)
     }
 }
 
@@ -45,7 +51,8 @@ struct Images : View{
         Image("image")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 100, height: 100)
+            .frame(width: 60, height: 60)
+            .offset(x: 140, y: 150)
     }
 }
 
@@ -54,7 +61,8 @@ struct Share : View{
         Image("share")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 100, height: 100)
+            .frame(width: 60, height: 60)
+            .offset(x: 140, y: 250)
     }
 }
 
@@ -64,6 +72,7 @@ struct Sheekbar : View{
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 400, height: 100)
+            .offset(x: 0, y: -400)
     }
 }
 
@@ -73,6 +82,7 @@ struct Stopgo : View{
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 350, height: 100)
+            .offset(x: 0, y: -30)
     }
 }
 
@@ -81,7 +91,8 @@ struct Uparrow : View{
         Image("uparrow")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 50, height: 50)
+            .frame(width: 20, height: 20)
+            .offset(x: 0, y: 370)
     }
 }
 
