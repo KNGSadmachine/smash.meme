@@ -8,8 +8,8 @@ struct ContentView: View {
             Image("DSC02510")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 2500, height: 1500)
-                .offset(x: -25, y: 250)
+                    .frame(width: 5000, height: 2500)
+                .offset(x: 45, y: 250)
                 .overlay(
                 Setting()
                 )
@@ -31,8 +31,22 @@ struct ContentView: View {
                 .overlay(
                 Uparrow()
                 )
+                .overlay(
+                KNJ()
+                )
+                .overlay(
+                Downarrow()
+                )
+                .overlay(
+                Username()
+                )
+//                .overlay(
+//                Subtitle()
+//                )
         }
     }
+
+
 
 //以下，UIボタンなど汎用的に使うもののビューの定義
 
@@ -95,6 +109,47 @@ struct Uparrow : View{
             .offset(x: 0, y: 370)
     }
 }
+
+struct KNJ : View{
+    var body: some View {
+        Image("KNJ")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 60, height: 60)
+            .offset(x: -150, y: -340)
+    }
+}
+
+struct Downarrow : View{
+    var body: some View {
+        Image("uparrow")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 20, height: 20)
+            .offset(x: -170, y: 370)
+            .rotationEffect(.degrees(180), anchor: .center)
+    }
+}
+
+struct Username : View{
+    var body: some View {
+        VStack{
+            Text("KNJ「Freestyle Football」")
+                .multilineTextAlignment(.leading)
+                .offset(x: 30, y: -345)
+                .foregroundColor(.white)
+                .font(Font.system(size: 23).bold())
+            Text("Crazy powered by Iwate Uni")
+                .multilineTextAlignment(.leading)
+                .offset(x: 4, y: -340)
+                .foregroundColor(.white)
+                .font(Font.system(size: 18))
+        }
+        
+        
+    }
+}
+
 
 
 
