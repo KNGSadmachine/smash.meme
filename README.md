@@ -1,13 +1,11 @@
 # *smash.meme*
-*smash.* の表示はなぜ迫力があるのか？
+バーティカルシアターアプリ*smash.* の表示はなぜ迫力があるのか？
 
 それを検証するiOSアプリのα版
 
-***
 
 <img src="https://user-images.githubusercontent.com/65950135/107902750-b226f680-6f8a-11eb-8b9a-1d1bef029782.png" width="400px">
 
-***
 
 ## 【対応機種】
 
