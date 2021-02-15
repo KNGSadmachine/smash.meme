@@ -122,12 +122,20 @@ struct KNJ : View{
 
 struct Downarrow : View{
     var body: some View {
-        Image("uparrow")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 20, height: 20)
-            .offset(x: -170, y: 385)
-            .rotationEffect(.degrees(180), anchor: .center)
+        VStack{
+            Image("uparrow")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 20, height: 20)
+                .offset(x: -170, y: 385)
+                .rotationEffect(.degrees(180), anchor: .center)
+            Text("作品の詳細")
+                .offset(x: 0, y: 385)
+                .foregroundColor(.white)
+                .font(Font.system(size: 12))
+        }
+        
+        
     }
 }
 
